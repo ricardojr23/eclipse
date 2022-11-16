@@ -16,7 +16,12 @@ public class CriarTabelaFunc {
 			+ "cargo VARCHAR(20) NOT NULL,"
 			+"end VARCHAR(80) NOT NULL"
 			+ ")";
-		Sta
+		
+		Statement stmt = conexao.createStatement();
+		stmt.execute(sql);
+		
+		System.out.println("Tabela criada com sucesso!");
+		conexao.close();
 		
 	
 	}
