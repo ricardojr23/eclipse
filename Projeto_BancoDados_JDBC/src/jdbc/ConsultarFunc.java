@@ -9,7 +9,7 @@ import java.util.List;
 
 public class ConsultarFunc {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		
 		Connection conexao = FabricaConexao.getConexao();
 		
@@ -25,9 +25,10 @@ public class ConsultarFunc {
 		String nome = resultado.getString("nome");
 		String cargo = resultado.getString("cargo");
 		String endereco = resultado.getString("endereco");
-		func.add(new Func(codigo, nome, cargo, endereco));
 		
+		func.add(new Func(codigo, nome, cargo, endereco));
 		}
+		
 		for(Func p: func) {
 		System.out.println(p.getCodigo() + " ==> " + p.getNome() + " ==> " + p.getCargo() + " ==> " + p.getEndereco());
 		}
