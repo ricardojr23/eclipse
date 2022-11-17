@@ -14,7 +14,7 @@ public class EcluirFunc {
 		
 		int codigo = entrada.nextInt();
 		Connection conexao = FabricaConexao.getConexao();
-		String sql = "DELETE FROM pessoas WHERE codigo = ?";
+		String sql = "DELETE FROM func WHERE codigo = ?";
 		PreparedStatement stmt = conexao.prepareStatement(sql);
 
 		stmt.setInt(1, codigo);

@@ -13,7 +13,7 @@ public class ConsultarFunc {
 		
 		Connection conexao = FabricaConexao.getConexao();
 		
-		String sql = "SELECT * FROM Func";
+		String sql = "SELECT * FROM func";
 		Statement stmt = conexao.createStatement();
 		ResultSet resultado = stmt.executeQuery(sql);
 		
