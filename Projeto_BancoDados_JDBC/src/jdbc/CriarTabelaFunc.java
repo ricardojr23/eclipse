@@ -14,7 +14,7 @@ public class CriarTabelaFunc {
 			+ "codigo INT AUTO_INCREMENT PRIMARY KEY,"
 			+ "nome VARCHAR(80) NOT NULL,"
 			+ "cargo VARCHAR(20) NOT NULL,"
-			+"end VARCHAR(80) NOT NULL"
+			+"endereco VARCHAR(80) NOT NULL"
 			+ ")";
 		
 		Statement stmt = conexao.createStatement();
