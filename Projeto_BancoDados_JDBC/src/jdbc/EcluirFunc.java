@@ -29,7 +29,7 @@ public class EcluirFunc {
 		}
 		
 		System.out.println("Linhas afetadas: " + contador);
-		// aqui havia um close de scanner
+		
 		conexao.close();
 		entrada.close();
 

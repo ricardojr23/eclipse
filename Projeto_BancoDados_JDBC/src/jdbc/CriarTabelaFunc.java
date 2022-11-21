@@ -21,7 +21,6 @@ public class CriarTabelaFunc {
 		stmt.execute(sql);
 		
 		System.out.println("Tabela criada com sucesso!");
-		//aqui acho q n tinha o close do statement mas posso estar enganado, nao lembro.
 		stmt.close();
 		conexao.close();
 		

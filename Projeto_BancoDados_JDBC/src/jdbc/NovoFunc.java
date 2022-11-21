@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class NovoFunc {
 
 	public static void main(String[] args) throws SQLException {
-		// aqui havia um objeto codigo nao utilizado
+		
 		Scanner entrada = new Scanner(System.in);
 		System.out.print("Informe o nome: ");
 		String nome = entrada.nextLine();
@@ -28,7 +28,7 @@ public class NovoFunc {
 		stmt.execute();
 		
 		System.out.println("Funcionario cadastrado com sucesso!");
-		//Acredito que aqui tambem havia um close de scanner
+		
 		entrada.close();
 	}
 }
