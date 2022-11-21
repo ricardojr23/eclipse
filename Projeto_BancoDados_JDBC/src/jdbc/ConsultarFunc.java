@@ -32,8 +32,8 @@ public class ConsultarFunc {
 		for(Func p: func) {
 		System.out.println(p.getCodigo() + " ==> " + p.getNome() + " ==> " + p.getCargo() + " ==> " + p.getEndereco());
 		}
-		
-		
+	/// Esses 3 closes estavam fora de ordem e sem o close de resultado
+		resultado.close();
 		stmt.close();
 		conexao.close();	
 
